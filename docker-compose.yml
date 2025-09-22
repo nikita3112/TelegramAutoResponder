@@ -1,0 +1,9 @@
+version: '3.9'
+
+services:
+  telethon-bot:
+    build: .
+    container_name: telethon-bot
+    restart: unless-stopped
+    volumes:
+      - ./session:/app/session
